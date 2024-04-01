@@ -1,5 +1,6 @@
 import '@testing-library/jest-dom';
 import { server } from './mocks/server';
+import { afterAll, afterEach, beforeAll } from 'vitest';
 
 //Está estabelecendo a API mocking, antes de todos os testes
 beforeAll(() => server.listen());
